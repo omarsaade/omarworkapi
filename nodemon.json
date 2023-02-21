@@ -1,0 +1,7 @@
+{
+    "env":{
+        "DB_USER":"megamobile",
+        "DB_PASSWORD":"megamobile111",
+        "DB_NAME":"mernprod"
+    }
+}

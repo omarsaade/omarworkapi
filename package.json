@@ -11,10 +11,18 @@
     "url": "git+https://github.com/omarsaade/omarworkapi.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Omar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/omarsaade/omarworkapi/issues"
   },
-  "homepage": "https://github.com/omarsaade/omarworkapi#readme"
+  "homepage": "https://github.com/omarsaade/omarworkapi#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "mongoose": "^6.9.2",
+    "mongoose-unique-validator": "^3.1.0",
+    "nodemon": "^2.0.20"
+  }
 }
