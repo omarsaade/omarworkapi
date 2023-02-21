@@ -1,7 +1,7 @@
 {
   "name": "omarworkapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "text",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node index.js",

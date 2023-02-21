@@ -3,7 +3,17 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 
-const Message = require("./models/Message");
+const Message = require("./models/message");
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Origin,X-Requested-With,Content-Type,Accept,Authorization"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,PATCH,DELETE");
+  next();
+});
 
 app.use(express.json());
 
@@ -13,7 +23,7 @@ app.post("/api/messages", async (req, res) => {
   await message.save();
   res.json(message);
 });
-
+console.log(process.env.DB_NAME);
 mongoose.set("strictQuery", false);
 mongoose
   .connect(
