@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 
-const Message = require("./models/message");
+const Message = require("./message");
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
